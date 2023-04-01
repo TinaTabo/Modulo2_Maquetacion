@@ -27,6 +27,7 @@ body{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            text-shadow: 1px 1px 1px black;
         }
             .links__link{
                 color: white;
@@ -48,7 +49,7 @@ body{
     }
         .cursos__bootcamp{
             border: 2px solid black;
-            background-color: rgb(255, 255, 255,0.5);
+            background-color: rgb(255, 255, 255,0.35);
             border-radius: 15px;
             height: 65vh;
             width: 46vw;
@@ -82,6 +83,7 @@ body{
                 padding: 15px 32px;
                 text-align: center;
                 font-size: 15px;
+                text-shadow: 1px 1px 1px black;
                 width: 30%;
             }
             .bootcamp__button:hover{
@@ -166,6 +168,7 @@ body{
                         padding: 10px 20px;
                         text-align: center;
                         font-size: 12px;
+                        text-shadow: 1px 1px 1px black;
                         width: 60%;
                     }
                     .button:hover{

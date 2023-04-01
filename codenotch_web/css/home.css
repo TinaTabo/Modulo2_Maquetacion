@@ -12,6 +12,7 @@ body{
 
     font-family: Poppins, "Arial Black", Gadget, sans-serif;
     letter-spacing: 0.5px;
+    text-shadow: 1px 1px 1px black;
 }
     .nav{
         width: 100vw;

@@ -109,6 +109,9 @@ body{
                     box-shadow: 0 5px black;
                     transform: translateY(4px);
                 }
+        .contacto__icono{
+            padding-bottom: 200px;
+        }
     .footer{
         background-color: black;
 

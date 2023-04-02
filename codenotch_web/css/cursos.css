@@ -1,0 +1,194 @@
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    font-family: Poppins, "Arial Black", Gadget, sans-serif;
+    letter-spacing: 0.5px;
+}
+    .nav{
+        width: 100vw;
+        height: 13vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        position: fixed;
+    }
+        .nav__links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-shadow: 1px 1px 1px black;
+        }
+            .links__link{
+                color: white;
+                padding: 15px 40px;
+            }
+            .links__link:hover{
+                background-color: #0000ff;
+            }
+    .cursos{
+        height: 100vh;
+        background-image: url(../img/fondo-bootcamps.png);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        padding-top: 70px;
+    }
+        .cursos__bootcamp{
+            border: 2px solid black;
+            background-color: rgb(255, 255, 255,0.35);
+            border-radius: 15px;
+            height: 65vh;
+            width: 46vw;
+            text-align: center;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .bootcamp__title{
+                color: white;
+                text-shadow: 1px 1px 2px black;
+                font-size: 20px;
+            }
+                .word__color{
+                    color: #10f294;
+                }
+            .bootcamp__info{
+                text-align: justify;
+                padding: 50px;
+                padding-top: 30px;
+            }
+            .bootcamp__button{
+                all: unset;
+                background-color: #0000ff;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                padding: 15px 32px;
+                text-align: center;
+                font-size: 15px;
+                text-shadow: 1px 1px 1px black;
+                width: 30%;
+            }
+            .bootcamp__button:hover{
+                background-color: #10f294;
+            }
+                .button__link{
+                    color: white;
+                }
+                .button__link:hover{
+                    color: black;
+                }
+    .convocatorias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+        .convocatorias__header{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            padding-bottom: 30px;
+        }
+            .line{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 26px;
+            }
+        .convocatorias__bootcamp{
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+            .convocatorias__dates{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 20px;
+                padding-top: 30px;
+            }
+                .convocatorias__dates--date{
+                    border: 2px solid #0000ff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 15px;
+                    padding: 20px;
+                }
+                    .date{
+                        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-size: 12px;
+                        align-self: self-start;
+                    }
+                        .bold{
+                            font-weight: bold;
+                            font-size: 12px;
+                        }
+                    .precio{
+                        background-color: #0000ff;
+                        color: white;
+                        padding: 20px;
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        gap: 40px;
+                    }
+                    .becas{
+                        align-self: self-start;
+                        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
+                    .button{
+                        all: unset;
+                        background-color: #0000ff;
+                        border: none;
+                        border-radius: 15px;
+                        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                        padding: 10px 20px;
+                        text-align: center;
+                        font-size: 12px;
+                        text-shadow: 1px 1px 1px black;
+                        width: 60%;
+                    }
+                    .button:hover{
+                        background-color: #10f294;
+                    }
+    .footer{
+        background-color: black;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+        .footer__rrss{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .footer__copyrigth{
+            color: white;
+            font-size: 11px;
+        }

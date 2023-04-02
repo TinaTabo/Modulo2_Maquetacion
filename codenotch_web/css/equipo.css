@@ -1,0 +1,122 @@
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    font-family: Poppins, "Arial Black", Gadget, sans-serif;
+    letter-spacing: 0.5px;
+}
+    .nav{
+        width: 100vw;
+        height: 13vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        position: fixed;
+        z-index: 9999;
+    }
+        .nav__links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+            .links__link{
+                color: white;
+                padding: 15px 40px;
+            }
+            .links__link:hover{
+                background-color: #0000ff;
+            }
+    .header{
+        background-image: url(../img/cabecera-equipo.PNG);
+        padding: 20px;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        padding-top: 100px;
+    }
+    .personal{
+        background-image: url(../img/fondo-equipo.png);
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+        .departamento{
+            text-shadow: 1.5px 1.5px 2px black;
+            color: #0000ff;
+        }
+        .personal__fila{
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+            .div-img{
+                display:inline-block;
+                position:relative;
+            }
+                .div-img > div {
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    z-index:-1;
+                    padding:10px;
+                    margin:0;
+                    border: 6px ridge #0000ff;
+                    background-color: rgb(255, 255, 255, 0.9);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding: 11.265px;
+                }
+                .personal__img{
+                    border: 6px ridge #0000ff;
+                }
+                    .personal__img:hover {
+                        opacity: 0.07;
+                        -webkit-transition: opacity 500ms;
+                        -moz-transition: opacity 500ms;
+                        -o-transition: opacity 500ms;
+                        -ms-transition: opacity 500ms;
+                        transition: opacity 500ms;
+                    }
+                    .puesto{
+                        font-size: 15px;
+                    }
+                    .personal__name{
+                        color: #0000ff;
+                    }
+                    .personal__info{
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                    }
+    .footer{
+        background-color: black;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+        .footer__rrss{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .footer__copyrigth{
+            color: white;
+            font-size: 11px;
+        }
+

@@ -8,4 +8,5 @@ En los siguientes enlaces podrás visualizar las webs desarrolladas como parte d
 - Reto4: Blog Flex-Box: https://tinatabo.github.io/Modulo2_Maquetacion/Maquetacion_Basica/blogPages/home.html
 
 ## Retos Flexbox -- rama dia2
+(Visualizar en navegador de escritorio)
 - Web de Codenotch: https://tinatabo.github.io/Modulo2_Maquetacion/codenotch_web/html/home.html

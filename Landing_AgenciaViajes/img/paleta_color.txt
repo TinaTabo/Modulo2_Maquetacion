@@ -1,0 +1,5 @@
+Marrón oscuro o tierra: #543d2b (RGB: 84, 61, 43)
+Verde oscuro o musgo: #2e3d30 (RGB: 46, 61, 48)
+Azul oscuro o medianoche: #1a233c (RGB: 26, 35, 60)
+Beige o arena: #f0e6d2 (RGB: 240, 230, 210)
+Naranja o amarillo mostaza: #e6b93b (RGB: 230, 185, 59)

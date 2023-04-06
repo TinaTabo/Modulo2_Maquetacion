@@ -1,0 +1,231 @@
+/* Cargar fuentes*/
+@font-face {
+    font-family: 'AbrilFatFace';
+    src: url(./fonts/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: 'OswaldLight';
+    src: url(./fonts/Oswald-Light.ttf);
+}
+
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Variables generales*/
+:root{
+    --colorBrown: #543d2b;
+    --colorGreen: #2e3d30;
+    --colorBlue: #1a233c;
+    --colorBeige: #f0e6d2;
+    --colorOrange: #e6b93b;
+}
+
+/* Diseños generales*/
+h2{
+    font-family: 'AbrilFatFace';
+    text-shadow: 1.5px 1px 9px var(--colorBeige);
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    font-weight: 900;
+    padding: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+.bold{
+    font-weight: bolder;
+    text-shadow: 3px -2px 2px black;
+    color: var(--colorOrange);
+}
+
+body{
+    height: 500vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorOrange);
+
+    font-family: 'OswaldLight';
+    /* letter-spacing: 0.5px; */
+    /* text-shadow: 1px 1px 1px black; */
+}
+    .header{
+        height: 11.5%;
+        background-image: url(./img/header.png);
+    }
+
+
+    .relleno{
+        background-color: var(--colorBrown);
+        color: var(--colorBeige);
+        height: 50px;
+    }
+
+
+    .destinos{
+        height: 32%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 36px;
+    }
+        .destinos__h2{
+            color: var(--colorBrown);
+        }
+        .destinos__p{
+            color: var(--colorBrown);
+        }
+        .destinos__listaDestinos{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+            .listaDestinos__fila{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 7px;
+            }
+                .fila__destino{
+                    position: relative;
+                }
+                    .destino__front{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        width: 300px;
+                        height: 200px;
+                        font-family: 'AbrilFatFace';
+                        letter-spacing: 5px;
+                        font-size: 30px;
+                        position: relative;
+                        text-align: center;
+                    }
+                        .destino__nombre{
+                            position: absolute;
+                            color: var(--colorBeige);
+                            text-shadow: 6px -2px 4px black;
+                        }
+                        .destino__img{
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            box-shadow: 7px 2px 6px var(--colorBrown);
+                        }
+                    .destino__back{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0;
+                        transition: 1s ease;
+                        background-color: var(--colorGreen);
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .destino__texto{
+                            color: white;
+                            font-size: 20px;
+                            position: absolute;
+                            text-align: center;
+                        }
+                .fila__destino:hover .destino__back{
+                    opacity: 1;
+                }
+
+
+    .paquetes{
+        border: 2px solid purple;
+        height: 40%;
+        background-image: url(./img/fondo-marron.jpg);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 36px;
+        padding-top: 70px;
+    }
+        .paquetes__h2{
+            color: var(--colorOrange);
+            text-shadow: 1.5px 1px 9px var(--colorGreen);
+        }
+        .paquetes__p{
+            color: var(--colorBeige);
+            font-weight: 599;
+        }
+        .paquetes__listaPaquetes{
+            height: 62%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+            .paquete{
+                height: 100%;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+                .paquete__info{
+                    position: absolute;
+                    width: 23%;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border-radius: 15px;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    .paquete__nombre{
+                        color: var(--colorOrange);
+                        font-size: 30px;
+                        text-shadow: 3px -2px 5px black;
+                    }
+                    .paquete__texto{
+                        color: var(--colorBeige);
+                    }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            padding: 20px;
+                        }
+                .paquete__img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    box-shadow: 7px 5px 6px black;
+                }
+
+
+    .testimonios{
+        border: 2px solid purple;
+        height: 10%;
+    }
+    .conocenos{
+        border: 2px solid purple;
+        height: 20%;
+    }
+    .formulario{
+        border: 2px solid purple;
+        height: 20%;
+    }
+    .footer{
+        border: 2px solid purple;
+        height: 6%;
+    }

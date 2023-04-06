@@ -46,7 +46,7 @@ p{
 }
 
 body{
-    height: 500vh;
+    height: 600vh;
     display: flex;
     flex-direction: column;
     background-color: var(--colorOrange);
@@ -56,7 +56,7 @@ body{
     /* text-shadow: 1px 1px 1px black; */
 }
     .header{
-        height: 12.5%;
+        height: 10%;
         background-image: url(./img/header.png);
     }
 
@@ -69,7 +69,7 @@ body{
 
 
     .destinos{
-        height: 34%;
+        height: 30%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -215,9 +215,43 @@ body{
 
 
     .testimonios{
-        border: 2px solid purple;
-        height: 10%;
+        height: 15%;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 40px;
+        gap: 5px;
     }
+        .testimonios__rotulo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 30px;
+            text-align: center;
+            font-family: 'AbrilFatFace';
+            color: var(--colorOrange);
+            text-shadow: 1.5px 1px 2px var(--colorBrown);
+        }
+        .testimonio{
+            border: 7px ridge var(--colorBrown);
+            border-radius: 10px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+            .testimonio__p{
+                font-size: 19px;
+                color: var(--colorBrown);
+            }
+            .testimonio__fuente{
+                align-self: flex-end;
+                font-size: 25px;
+                color: var(--colorOrange);
+                text-shadow: 1.5px 1px 0.1px var(--colorBrown);
+            }
     .conocenos{
         border: 2px solid purple;
         height: 20%;

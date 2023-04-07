@@ -45,7 +45,7 @@ p{
 }
 
 body{
-    height: 610vh;
+    height: 620vh;
     display: flex;
     flex-direction: column;
     background-image: url(./img/fondo-amarillo.jpg);
@@ -61,7 +61,7 @@ body{
     .relleno{
         background-color: var(--colorBrown);
         color: var(--colorBeige);
-        height: 1%;
+        height: 2%;
     }
 
 
@@ -187,6 +187,8 @@ body{
                     padding: 20px;
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                 }
                     .paquete__nombre{
                         color: var(--colorOrange);
@@ -250,6 +252,8 @@ body{
                 color: var(--colorOrange);
                 text-shadow: 1.5px 1px 0.1px var(--colorBrown);
             }
+
+
     .conocenos{
         background-image: url(./img/fondo-marron.jpg);
         height: 20%;
@@ -270,6 +274,8 @@ body{
             color: var(--colorBeige);
             text-shadow: 0.1px 0.1px 9px black;
         }
+
+
     .contacto{
         height: 20%;
         display: flex;
@@ -368,7 +374,23 @@ body{
                     box-shadow: 0 5px var(--colorBrown);
                     transform: translateY(4px);
                 }
+
+
     .footer{
-        border: 2px solid purple;
         height: 3%;
+        background-color: var(--colorBrown);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
     }
+        .footer__rrss{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .footer__copyrigth{
+            color: var(--colorBeige);
+            font-size: 11px;
+        }

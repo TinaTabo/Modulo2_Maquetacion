@@ -53,7 +53,7 @@ body{
     font-family: 'OswaldLight';
 }
     .header{
-        height: 13%;
+        height: 6.3%;
         background-image: url(./img/header.png);
     }
 
@@ -61,12 +61,12 @@ body{
     .relleno{
         background-color: var(--colorBrown);
         color: var(--colorBeige);
-        height: 2%;
+        height: 1%;
     }
 
 
     .destinos{
-        height: 35%;
+        height: 18%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -148,7 +148,7 @@ body{
 
 
     .paquetes{
-        height: 40%;
+        height: 25.2%;
         background-image: url(./img/fondo-marron.jpg);
         display: flex;
         flex-direction: column;
@@ -214,7 +214,7 @@ body{
 
 
     .testimonios{
-        height: 15%;
+        height: 12%;
         background-color: whitesmoke;
         display: flex;
         flex-direction: row;
@@ -256,7 +256,7 @@ body{
 
     .conocenos{
         background-image: url(./img/fondo-marron.jpg);
-        height: 20%;
+        height: 19.5%;
         display: flex;
         flex-direction: column;
         color: var(--colorBeige);
@@ -277,7 +277,7 @@ body{
 
 
     .contacto{
-        height: 20%;
+        height: 16%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -377,7 +377,7 @@ body{
 
 
     .footer{
-        height: 3%;
+        height: 2%;
         background-color: var(--colorBrown);
         display: flex;
         flex-direction: row;

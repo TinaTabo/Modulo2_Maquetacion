@@ -169,6 +169,7 @@ body{
             height: 62%;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
         }
             .paquete{
@@ -187,6 +188,7 @@ body{
                     padding: 20px;
                     display: flex;
                     flex-direction: column;
+                    flex-wrap: wrap;
                     justify-content: center;
                     align-items: center;
                 }
@@ -214,10 +216,11 @@ body{
 
 
     .testimonios{
-        height: 12%;
+        height: 14%;
         background-color: whitesmoke;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         padding: 40px;
         gap: 5px;
@@ -226,39 +229,47 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-right: 30px;
             text-align: center;
             font-family: 'AbrilFatFace';
             color: var(--colorOrange);
             text-shadow: 1.5px 1px 2px var(--colorBrown);
         }
-        .testimonio{
-            border: 7px ridge var(--colorBrown);
-            border-radius: 10px;
-            background-color: rgba(230, 185, 59, 0.3);
-            width: 30%;
+        .testimonios__apartados{
+            width: 86%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
+            gap: 5px;
         }
-            .testimonio__p{
-                font-size: 19px;
-                color: var(--colorBrown);
+            .testimonio{
+                border: 7px ridge var(--colorBrown);
+                border-radius: 10px;
+                background-color: rgba(230, 185, 59, 0.3);
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
             }
-            .testimonio__fuente{
-                align-self: flex-end;
-                font-size: 25px;
-                color: var(--colorOrange);
-                text-shadow: 1.5px 1px 0.1px var(--colorBrown);
-            }
+                .testimonio__p{
+                    font-size: 19px;
+                    color: var(--colorBrown);
+                }
+                .testimonio__fuente{
+                    align-self: flex-end;
+                    font-size: 25px;
+                    color: var(--colorOrange);
+                    text-shadow: 1.5px 1px 0.1px var(--colorBrown);
+                }
 
 
     .conocenos{
         background-image: url(./img/fondo-marron.jpg);
-        height: 19.5%;
+        height: 17.5%;
         display: flex;
         flex-direction: column;
+        gap: 20px;
         color: var(--colorBeige);
     }
         .conocenos__h2{
@@ -268,18 +279,25 @@ body{
         .conocenos__texto{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
-            gap: 80px;
-            padding: 80px;
+            padding: 10px;
             color: var(--colorBeige);
             text-shadow: 0.1px 0.1px 9px black;
         }
+            .texto__1{
+                width: 43%;
+            }
+            .texto__2{
+                width: 43%;
+            }
 
 
     .contacto{
         height: 16%;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: flex-start;
     }
         .formulario{
@@ -351,6 +369,7 @@ body{
             .formulario__botones{
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: flex-start;
                 align-content: center;
                 gap: 50px;
@@ -381,6 +400,7 @@ body{
         background-color: var(--colorBrown);
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         padding: 20px;
@@ -388,6 +408,7 @@ body{
         .footer__rrss{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             gap: 20px;
         }
         .footer__copyrigth{

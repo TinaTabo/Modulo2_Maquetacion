@@ -336,17 +336,29 @@
                 <input type="text" id="name" placeholder="Nombre Completo*">
                 <input type="text" id="origin" placeholder="Origen*">
                 <input type="text" id="destination" placeholder="Destino*">
-                <input type="text" id="numPeople" placeholder="Nº de Personas">
+                <input type="text" id="numPeople" placeholder="Nº de Personas*">
                 <div class="input__date">
                     <label for="input_date">Fecha*</label>
                     <input type="date" id="date" placeholder="Fecha">
                 </div>
+                <div class="formulario__botones">
+                    <button id="registration" onclick="saveRequest()" type="reset">Solicita Información</button>
+                    <button id="filter" onclick="filterRequest()" type="reset">Filtrar</button>
+                </div>
             </form>
-            <div class="formulario__botones">
-                <button id="registration" onclick="saveRequest()" type="reset">Solicita Información</button>
-                <button id="filter" onclick="" type="reset">Filtrar</button>
-            </div>
         </div>
+
+        <aside class="aside aside2">
+            <table class= "table" id="request">
+                    <!-- <tr class="table__head">
+                        <th>Nombre</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
+                        <th>Nº de Personas</th>
+                        <th>Fecha</th>
+                    </tr> -->
+            </table>
+        </aside>
     </div>
 
     <footer class="footer">

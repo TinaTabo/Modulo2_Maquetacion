@@ -299,9 +299,10 @@ body{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
+        align-items: center;
     }
         .formulario{
-            width: 70%;
+            width: 60%;
             display: flex;
             flex-direction: column;
             padding: 50px;
@@ -391,6 +392,34 @@ body{
                     background-color: var(--colorBeige);
                     box-shadow: 0 5px var(--colorBrown);
                     transform: translateY(4px);
+                }
+        .aside{
+            display: none;
+        }
+        .aside2{
+            width: 35%;
+        }
+            .table{
+                background-color: var(--colorBeige);
+                justify-content: space-evenly;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+            }
+                .head{
+                    font-size: large;
+                    color: var(--colorBrown);
+                }
+                .head2{
+                    color: red;
+                }
+                .table tr th{
+                    border: solid 1px var(--colorBrown);
+                    border-radius: 4px;
+                    padding: 3px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    font-family: inherit;
                 }
 
 

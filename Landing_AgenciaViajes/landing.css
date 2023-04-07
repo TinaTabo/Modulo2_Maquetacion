@@ -350,7 +350,6 @@ body{
                     padding-left: 7px;
                 }
                     input[type=date]{
-                        width: 19%;
                         appearance: none;
                         color: var(--colorBrown);
                         font-family: 'OswaldLight';

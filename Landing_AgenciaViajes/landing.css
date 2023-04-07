@@ -1,0 +1,446 @@
+/* Cargar fuentes*/
+@font-face {
+    font-family: 'AbrilFatFace';
+    src: url(./fonts/AbrilFatface-Regular.ttf);
+}
+@font-face {
+    font-family: 'OswaldLight';
+    src: url(./fonts/Oswald-Light.ttf);
+}
+
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Variables generales*/
+:root{
+    --colorBrown: #543d2b;
+    --colorGreen: #2e3d30;
+    --colorBeige: #f0e6d2;
+    --colorOrange: #e6b93b;
+}
+
+/* Diseños generales*/
+h2{
+    font-family: 'AbrilFatFace';
+    text-shadow: 1.5px 1px 9px var(--colorBeige);
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: center;
+}
+p{
+    font-weight: 900;
+    padding: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+.bold{
+    font-weight: bolder;
+    text-shadow: 3px -2px 2px black;
+    color: var(--colorOrange);
+}
+
+body{
+    height: 620vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/fondo-amarillo.jpg);
+
+    font-family: 'OswaldLight';
+}
+    .header{
+        height: 6.3%;
+        background-image: url(./img/header.png);
+    }
+
+
+    .relleno{
+        background-color: var(--colorBrown);
+        color: var(--colorBeige);
+        height: 1%;
+    }
+
+
+    .destinos{
+        height: 18%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 36px;
+    }
+        .destinos__h2{
+            color: var(--colorBrown);
+            font-size: 40px;
+        }
+        .destinos__p{
+            color: var(--colorBrown);
+        }
+        .destinos__listaDestinos{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+            .listaDestinos__fila{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 7px;
+            }
+                .fila__destino{
+                    position: relative;
+                }
+                    .destino__front{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        width: 300px;
+                        height: 200px;
+                        font-family: 'AbrilFatFace';
+                        letter-spacing: 5px;
+                        font-size: 30px;
+                        position: relative;
+                        text-align: center;
+                    }
+                        .destino__nombre{
+                            position: absolute;
+                            color: var(--colorBeige);
+                            text-shadow: 6px -2px 4px black;
+                        }
+                        .destino__img{
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                            box-shadow: 7px 2px 6px var(--colorBrown);
+                        }
+                    .destino__back{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0;
+                        transition: 1s ease;
+                        background-color: var(--colorBrown);
+                        border-radius: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .destino__texto{
+                            color: white;
+                            font-size: 20px;
+                            position: absolute;
+                            text-align: center;
+                        }
+                .fila__destino:hover .destino__back{
+                    opacity: 1;
+                }
+
+
+    .paquetes{
+        height: 25.2%;
+        background-image: url(./img/fondo-marron.jpg);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 36px;
+        padding-top: 70px;
+    }
+        .paquetes__h2{
+            color: var(--colorOrange);
+            font-size: 40px;
+            text-shadow: 1.5px 1px 9px var(--colorGreen);
+        }
+        .paquetes__p{
+            color: var(--colorBeige);
+            font-weight: 599;
+        }
+        .paquetes__listaPaquetes{
+            height: 62%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+            .paquete{
+                height: 100%;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+                .paquete__info{
+                    position: absolute;
+                    width: 23%;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border-radius: 15px;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    .paquete__nombre{
+                        color: var(--colorOrange);
+                        font-size: 30px;
+                        text-shadow: 3px -2px 5px black;
+                    }
+                    .paquete__texto{
+                        color: var(--colorBeige);
+                    }
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            padding: 20px;
+                        }
+                .paquete__img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5px;
+                    box-shadow: 7px 5px 6px black;
+                }
+
+
+    .testimonios{
+        height: 14%;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 40px;
+        gap: 5px;
+    }
+        .testimonios__rotulo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            font-family: 'AbrilFatFace';
+            color: var(--colorOrange);
+            text-shadow: 1.5px 1px 2px var(--colorBrown);
+        }
+        .testimonios__apartados{
+            width: 86%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+            .testimonio{
+                border: 7px ridge var(--colorBrown);
+                border-radius: 10px;
+                background-color: rgba(230, 185, 59, 0.3);
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+            }
+                .testimonio__p{
+                    font-size: 19px;
+                    color: var(--colorBrown);
+                }
+                .testimonio__fuente{
+                    align-self: flex-end;
+                    font-size: 25px;
+                    color: var(--colorOrange);
+                    text-shadow: 1.5px 1px 0.1px var(--colorBrown);
+                }
+
+
+    .conocenos{
+        background-image: url(./img/fondo-marron.jpg);
+        height: 17.5%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: var(--colorBeige);
+    }
+        .conocenos__h2{
+            padding-top: 40px;
+            text-shadow: 1.5px 1px 9px black;
+        }
+        .conocenos__texto{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+            color: var(--colorBeige);
+            text-shadow: 0.1px 0.1px 9px black;
+        }
+            .texto__1{
+                width: 43%;
+            }
+            .texto__2{
+                width: 43%;
+            }
+
+
+    .contacto{
+        height: 16%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        .formulario{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            padding-left: 100px;
+            gap: 20px;
+        }
+            .formulario__texto{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20xp;
+                color: var(--colorBrown);
+            }
+                .formulario__h1{
+                    font-family: 'AbrilFatFace';
+                    text-shadow: 1px 1px 9px var(--colorBeige);
+                    letter-spacing: 1px;
+                }
+            .formulario__cuerpo{
+                width: 85%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+                input[type=text]{
+                    font-family: 'OswaldLight';
+                    font-size: 18px;
+                    background-color: var(--colorOrange);
+                    padding: 8px;
+                    border: none;
+                    border-bottom: 2px solid var(--colorBrown);
+                    outline: none;
+                    color: var(--colorBrown);
+                }
+                input[type=text]::placeholder{
+                    color: var(--colorBrown);
+                }
+                .input__date{
+                    font-family: 'OswaldLight';
+                    color: var(--colorBrown);
+                    font-size: 19px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 20px;
+                    padding-left: 7px;
+                }
+                    input[type=date]{
+                        appearance: none;
+                        color: var(--colorBrown);
+                        font-family: 'OswaldLight';
+                        font-size: 18px;
+                        border: 2px solid var(--colorBrown);
+                        background-color: var(--colorOrange);
+                        padding: 4px;
+                    }
+                    input[type=date]:focus{
+                        color: var(--colorBrown);
+                        background-color: var(--colorBeige);
+                        border-color: var(--colorBrown);
+                        outline: 0;
+                        box-shadow: 0 0 0 0.2rem rgba(84,61,43,.25);
+                    }
+            .formulario__botones{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: center;
+                gap: 50px;
+            }
+                button{
+                    width: 200px;
+                    height: 40px;
+                    border: none;
+                    box-shadow: 2px 3px 2px var(--colorBrown);
+                    border-radius: 15px;
+                    background-color: var(--colorBrown);
+                    color: var(--colorBeige);
+                    font-size: 19px;
+                    font-family: 'OswaldLight';
+                    text-shadow: 0.5px 1px 1px var(--colorBeige);
+                }
+                button:active{
+                    color: var(--colorBrown);
+                    font-weight: 600;
+                    background-color: var(--colorBeige);
+                    box-shadow: 0 5px var(--colorBrown);
+                    transform: translateY(4px);
+                }
+        .aside{
+            display: none;
+        }
+        .aside2{
+            width: 35%;
+        }
+            .table{
+                background-color: var(--colorBeige);
+                justify-content: space-evenly;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+            }
+                .head{
+                    font-size: large;
+                    color: var(--colorBrown);
+                }
+                .head2{
+                    color: red;
+                }
+                .table tr th{
+                    border: solid 1px var(--colorBrown);
+                    border-radius: 4px;
+                    padding: 3px;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    font-family: inherit;
+                }
+
+
+    .footer{
+        height: 2%;
+        background-color: var(--colorBrown);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+        .footer__rrss{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer__copyrigth{
+            color: var(--colorBeige);
+            font-size: 13px;
+            letter-spacing: 1px;
+        }

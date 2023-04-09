@@ -6,24 +6,30 @@
     text-decoration: none;
 }
 
+/*--------Variables-----------*/
+:root{
+    --colorAzulLogo: #5271FF;
+    --colorAzul: #3A98B9;
+    --colorBeige: #FFF1DC;
+    --colorRosaPalo: #E8D5C4;
+    --colorGris: #EEEEEE;
+}
+
 
 /*------------------------------------*/
 body{
     display: flex;
     flex-direction: column;
-    gap: 5px;
 }
     .nav_bar{
-        border: 2px solid red;
+        width: 100%;
+        background-color: black;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
     }
-        .nav_bar__img{
-            
-        }
         .nav_bar__links{
             display: flex;
             flex-direction: row;
@@ -32,12 +38,20 @@ body{
             gap: 50px;
         }
             .nav_bar__link{
-
+                border: 2px hidden;
+                border-radius: 5px;
+                color: var(--colorAzulLogo);
+                padding: 10px 20px;
+            }
+            .nav_bar__link:hover{
+                background-color: var(--colorAzulLogo);
+                color: black;
+                box-shadow: 1px 1px 1px var(--colorBeige);
             }
 
 
     .home{
-        border: 2px solid green;
+        background-color: var(--colorAzul);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -92,7 +106,7 @@ body{
 
 
     .sobre_mi{
-        border: 2px solid blue;
+        background-color: var(--colorRosaPalo);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -155,7 +169,7 @@ body{
 
 
     .tecnologias{
-        border: 2px solid yellow;
+        background-color: var(--colorGris);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -182,7 +196,7 @@ body{
 
 
     .proyectos{
-        border: 2px solid palevioletred;
+        background-color: var(--colorRosaPalo);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -224,7 +238,7 @@ body{
 
 
     .contacto{
-        border: 2px solid purple;
+        background-color: var(--colorAzul);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -265,7 +279,7 @@ body{
 
 
     .footer{
-        border: 2px solid chocolate;
+        background-color: black;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -273,18 +287,13 @@ body{
         flex-wrap: wrap;
         padding: 10px;
     }
-        .footer__logo{
-
-        }
         .footer__rrss{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            gap: 20px;
         }
-            .footer__rrss--img{
-
-            }
         .footer__derechos{
-            
+            color: var(--colorGris);
         }

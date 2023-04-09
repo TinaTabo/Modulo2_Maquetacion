@@ -13,4 +13,4 @@ En los siguientes enlaces podrás visualizar las webs desarrolladas como parte d
 
 ## Tema 2 - DOM y JavaScript -- rama dia3
 (Visualizar en navegador de escritorio)
-- Landing Page Agencia de Viajes "ExploraMundi": https://tinatabo.github.io/Modulo2_Maquetacion/Landing_AgenciaViajes/landing.html
+- Landing Page Agencia de Viajes "ExploraMundi": 

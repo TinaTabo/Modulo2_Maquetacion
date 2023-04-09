@@ -19,6 +19,7 @@ body{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
         .nav_bar__img{
             
@@ -41,12 +42,15 @@ body{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
         gap: 100px;
         padding: 100px;
     }
-        .home__presentación{
+        .home__presentacion{
             display: flex;
             flex-direction: column;
+            gap: 10px;
+            width: 60%;
         }
             .presentacion__h2{
 
@@ -61,6 +65,7 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 10px;
         }
             .datos__img{
 
@@ -76,6 +81,7 @@ body{
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
+                gap: 10px;
             }
                 .rrss__link{
 
@@ -91,10 +97,15 @@ body{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
+        padding: 80px;
+        gap: 100px;
     }
         .sobre_mi__bloque1{
             display: flex;
             flex-direction: column;
+            gap: 20px;
+            width: 60%;
         }
             .bloque1__h2{
 
@@ -102,9 +113,19 @@ body{
             .bloque1__p{
 
             }
+            .bloque1__imgs{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
         .sobre_mi__bloque2{
             display: flex;
             flex-direction: column;
+            gap: 20px;
+            width: 30%;
         }
             .bloque2__h2{
 
@@ -112,19 +133,21 @@ body{
             .bloque2__descripcion{
                 display: flex;
                 flex-direction: column;
+                gap: 20px;
             }
                 .descripcion__formacion{
                     display: flex;
                     flex-direction: column;
+                    gap: 10px;
                 }
                     .formacion__lugar{
 
                     }
                         .lugar__icono{
-                            
+
                         }
                     .formacion__descripcion{
-
+                        text-align: justify;
                     }
                         .bold{
                             font-weight: bold;
@@ -136,6 +159,8 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
+        padding: 50px;
     }
         .tecnologias__h2{
 
@@ -151,7 +176,7 @@ body{
                 justify-content: space-around;
                 align-items: center;
                 flex-wrap: wrap;
-                gap: 20px;
+                gap: 60px;
                 padding: 20px;
             }
 
@@ -161,6 +186,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 50px;
     }
         .proyectos__h2{
 
@@ -170,10 +196,12 @@ body{
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            gap: 120px;
+            padding: 20px;
             flex-wrap: wrap;
         }
             .proyecto__link{
-                width: 25%;
+                width: 300px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -200,6 +228,8 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 30px;
+        padding: 50px;
     }
         .contacto__h2{
 
@@ -208,12 +238,14 @@ body{
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 20px;
         }
             .inputs__group{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
+                gap: 110px;
             }
                 .input__email{
 
@@ -238,6 +270,8 @@ body{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
     }
         .footer__logo{
 

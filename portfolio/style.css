@@ -166,20 +166,27 @@ body{
             align-items: center;
             flex-wrap: wrap;
         }
-            .expositor__proyecto{
+            .proyecto__link{
+                width: 25%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                justify-content: center;
             }
-                .proyecto__nombre{
-
+                .proyecto{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
                 }
-                .proyecto__img{
+                        .proyecto__nombre{
 
-                }
-                .proyecto__descripcion{
+                        }
+                        .proyecto__img{
 
-                }
+                        }
+                        .proyecto__descripcion{
+                            text-align: justify;
+                        }
 
 
     .contacto{

@@ -11,7 +11,7 @@
     --colorAzulLogo: #5271FF;
     --colorAzul: #3A98B9;
     --colorBeige: #FFF1DC;
-    --colorRosaPalo: #E8D5C4;
+    --colorAmarillo: #FEFF86;
     --colorGris: #EEEEEE;
 }
 
@@ -35,6 +35,7 @@ body{
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
             gap: 50px;
         }
             .nav_bar__link{
@@ -51,7 +52,7 @@ body{
 
 
     .home{
-        background-color: var(--colorAzul);
+        background-image: url(./img/fondo-azul.jpg);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -82,7 +83,7 @@ body{
             gap: 10px;
         }
             .datos__img{
-
+                border-radius: 25px;
             }
             .datos__h3{
 
@@ -106,7 +107,7 @@ body{
 
 
     .sobre_mi{
-        background-color: var(--colorRosaPalo);
+        background-color: var(--colorAmarillo);
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -169,7 +170,7 @@ body{
 
 
     .tecnologias{
-        background-color: var(--colorGris);
+        background-image: url(./img/fondo-gris.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -196,7 +197,7 @@ body{
 
 
     .proyectos{
-        background-color: var(--colorRosaPalo);
+        background-color: var(--colorAmarillo);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -238,7 +239,7 @@ body{
 
 
     .contacto{
-        background-color: var(--colorAzul);
+        background-image: url(./img/fondo-azul.jpg);
         display: flex;
         flex-direction: column;
         align-items: center;

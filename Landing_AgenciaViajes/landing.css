@@ -45,28 +45,14 @@ p{
 }
 
 body{
-    height: 620vh;
     display: flex;
     flex-direction: column;
     background-image: url(./img/fondo-amarillo.jpg);
 
     font-family: 'OswaldLight';
 }
-    .header{
-        height: 6.3%;
-        background-image: url(./img/header.png);
-    }
-
-
-    .relleno{
-        background-color: var(--colorBrown);
-        color: var(--colorBeige);
-        height: 1%;
-    }
-
 
     .destinos{
-        height: 18%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -148,7 +134,6 @@ body{
 
 
     .paquetes{
-        height: 25.2%;
         background-image: url(./img/fondo-marron.jpg);
         display: flex;
         flex-direction: column;
@@ -166,15 +151,14 @@ body{
             font-weight: 599;
         }
         .paquetes__listaPaquetes{
-            height: 62%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+            gap: 20px;
         }
             .paquete{
-                height: 100%;
-                width: 30%;
+                width: 370px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -182,7 +166,7 @@ body{
             }
                 .paquete__info{
                     position: absolute;
-                    width: 23%;
+                    width: 300px;
                     background-color: rgba(0, 0, 0, 0.7);
                     border-radius: 15px;
                     padding: 20px;
@@ -216,7 +200,6 @@ body{
 
 
     .testimonios{
-        height: 14%;
         background-color: whitesmoke;
         display: flex;
         flex-direction: row;
@@ -235,7 +218,6 @@ body{
             text-shadow: 1.5px 1px 2px var(--colorBrown);
         }
         .testimonios__apartados{
-            width: 86%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -246,7 +228,7 @@ body{
                 border: 7px ridge var(--colorBrown);
                 border-radius: 10px;
                 background-color: rgba(230, 185, 59, 0.3);
-                width: 30%;
+                width: 350px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -266,7 +248,6 @@ body{
 
     .conocenos{
         background-image: url(./img/fondo-marron.jpg);
-        height: 17.5%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -286,23 +267,23 @@ body{
             text-shadow: 0.1px 0.1px 9px black;
         }
             .texto__1{
-                width: 43%;
+                width: 550px;
             }
             .texto__2{
-                width: 43%;
+                width: 550px;
             }
 
 
     .contacto{
-        height: 16%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
+        padding: 20px;
     }
         .formulario{
-            width: 60%;
+            width: 800px;
             display: flex;
             flex-direction: column;
             padding: 50px;
@@ -322,7 +303,6 @@ body{
                     letter-spacing: 1px;
                 }
             .formulario__cuerpo{
-                width: 85%;
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
@@ -397,7 +377,7 @@ body{
             display: none;
         }
         .aside2{
-            width: 35%;
+            width: 400px;
         }
             .table{
                 background-color: var(--colorBeige);
@@ -424,7 +404,6 @@ body{
 
 
     .footer{
-        height: 2%;
         background-color: var(--colorBrown);
         display: flex;
         flex-direction: row;

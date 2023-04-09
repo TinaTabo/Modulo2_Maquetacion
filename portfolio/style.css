@@ -21,13 +21,14 @@ body{
         align-items: center;
     }
         .nav_bar__img{
-
+            
         }
         .nav_bar__links{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            gap: 50px;
         }
             .nav_bar__link{
 
@@ -40,6 +41,8 @@ body{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        gap: 100px;
+        padding: 100px;
     }
         .home__presentación{
             display: flex;
@@ -117,6 +120,9 @@ body{
                     .formacion__lugar{
 
                     }
+                        .lugar__icono{
+                            
+                        }
                     .formacion__descripcion{
 
                     }

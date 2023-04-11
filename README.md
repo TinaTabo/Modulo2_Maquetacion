@@ -17,7 +17,7 @@ En los siguientes enlaces podrás visualizar las webs desarrolladas como parte d
 
 ## Tema 3 - CSS Avanzado -- rama dia4
 (Visualizar en navegador de escritorio)
-- Portfolio Web: https://tinatabo.github.io/Modulo2_Maquetacion/portfolio/index.html
+- Portfolio Web: https://tinatabo.github.io/Modulo2_Maquetacion/portfolio
 
 ## Tema 4 - Responsive Design -- rama dia5
 - Instagram Login: https://tinatabo.github.io/Modulo2_Maquetacion/instagram-login

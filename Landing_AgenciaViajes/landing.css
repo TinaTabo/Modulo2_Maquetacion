@@ -44,6 +44,10 @@ p{
     color: var(--colorOrange);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-direction: column;

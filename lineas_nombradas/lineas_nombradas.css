@@ -1,0 +1,114 @@
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: [column0] 2fr [column1] 1fr [column2] 1fr [column3];
+    grid-template-rows: [row0] 1fr [row1] 8fr [row2] 1fr [row3];
+}
+    .header{
+        background-color: #020a10;
+        color: white;
+        font-size: 30px;
+        grid-column: column0/column3;
+        grid-row: row0/row1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .main{
+        background-color: #0031ed;
+        grid-column: column0/column2;
+        grid-row: row1/row2;
+        padding: 20px;
+
+        display: grid;
+        grid-template-columns: [mainc0] 2fr [mainc1] 1fr [mainc2];
+        grid-template-rows: [mainr0] 1fr [mainr1] 2fr [mainr2];
+    }
+        .contenido, .texto1, .texto2{
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 3px;
+            grid-column: mainc0/mainc2;
+            grid-row: mainr0/mainr1;
+        }
+        .texto1{
+            font-weight: lighter;
+            font-size: 16px;
+            grid-column: mainc0/mainc1;
+            grid-row: mainr1/mainr2;
+        }
+        .texto2{
+            font-weight: lighter;
+            font-size: 16px;
+            grid-column: mainc1/mainc2;
+            grid-row: mainr1/mainr2;
+        }
+    .aside{
+        background-color: #00d29f;
+        grid-column: column2/column3;
+        grid-row: row1/row2;
+
+        display: grid;
+        grid-template-columns: [asidec0] 1fr [asidec1];
+        grid-template-rows: [asider0] 1fr [asider1] 1fr [asider2] 1fr [asider3] 1fr [asider4];
+
+    }
+        .menu, .menu1, .menu2, .menu3 {
+            border: 3px solid black;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+            grid-column: asidec0/asidec1;
+            grid-row: asider0/asider1;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu1, .menu2, .menu3{
+            border: none;
+            background-color: black;
+            font-weight: lighter;
+            font-size: 18px;
+            margin: 0px 10px 10px 10px;
+            grid-row: asider1/asider2;
+        }
+        .menu2{
+            grid-row: asider2/asider3;
+        }
+        .menu3{
+            grid-row: asider3/asider4;
+        }
+    .footer, .contacto{
+        background-color: #621dc0;
+        grid-column: column0/column1;
+        grid-row: row2/row3;
+        padding: 5px;
+    }
+    .contacto{
+        grid-column: column1/column3;
+    }
+        .footer__text, .contacto__text{
+            border: 2px solid black;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }

@@ -1,0 +1,22 @@
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr 2fr 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    text-align: center;
+}
+    .a, .c, .e{
+        background-color: #9efe4c;
+    }
+    .b, .d, .f{
+        background-color: black;
+        color: #9efe4c;
+    }

@@ -1,0 +1,67 @@
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header img"
+                        "aside main main"
+                        "aside main main"
+                        "aside main main"
+                        "aside main main"
+                        "aside main main"
+                        "aside main main"
+                        "footer footer footer";
+    text-align: center;
+    color: white;
+}
+    .header{
+        grid-area: header;
+        background-color: #b01e13;
+        padding: 10px;
+    }
+    .img{
+        grid-area: img;
+        background-color: #560f0d;
+        padding: 10px;
+    }
+    .aside{
+        grid-area: aside;
+        background-color: #ff6825;
+        display: grid;
+        height: 100%;
+    }
+        .aside__aside1, .aside__aside2{
+            background-color: white;
+            color: #ff6825;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px;
+        }
+    .main{
+        grid-area: main;
+        background-color: #ff391e;
+        display: grid;
+        height: 100%;
+    }
+        .contenido, .texto{
+            border: 2px solid white;
+            padding: 10px;
+            margin: 10px;
+        }
+        .contenido{
+            margin-bottom: 2.5px;
+        }
+        .texto{
+            margin-top: 2.5px;
+        }
+    .footer{
+        grid-area: footer;
+        background-color: #560f0d;
+        padding: 10px;
+    }

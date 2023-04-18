@@ -29,4 +29,5 @@ En los siguientes enlaces podrás visualizar las webs desarrolladas como parte d
 - Reto 4: Grid Áreas: https://tinatabo.github.io/Modulo2_Maquetacion/grid/grid_areas/grid_areas.html
 
 ## Tema 6 - Bootstrap y JQuery -- rama dia7
-- Reto 1: Maquetación Bootstrap: https://tinatabo.github.io/Modulo2_Maquetacion/
+- Reto 1: Maquetación Bootstrap: https://tinatabo.github.io/Modulo2_Maquetacion/bootstrap_jquery/bootstrap.html
+- Reto 2: Tienda de Ropa: https://tinatabo.github.io/Modulo2_Maquetacion/bootstrap_jquery/tienda_ropa/tienda_ropa.html

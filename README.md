@@ -21,3 +21,9 @@ En los siguientes enlaces podrás visualizar las webs desarrolladas como parte d
 
 ## Tema 4 - Responsive Design -- rama dia5
 - Instagram Login: https://tinatabo.github.io/Modulo2_Maquetacion/instagram_login
+
+## Tema 5 - Display Grid -- rama dia6
+- Reto 1: Medidas Absolutas: https://tinatabo.github.io/Modulo2_Maquetacion/grid/medidas_absolutas/medidas_absolutas.html
+- Reto 2: Fracciones: https://tinatabo.github.io/Modulo2_Maquetacion/grid/fracciones/fracciones.html
+- Reto 3: Líneas Nombradas: https://tinatabo.github.io/Modulo2_Maquetacion/grid/lineas_nombradas/lineas_nombradas.html
+- Reto 4: Grid Áreas: https://tinatabo.github.io/Modulo2_Maquetacion/grid/grid_areas/grid_areas.html

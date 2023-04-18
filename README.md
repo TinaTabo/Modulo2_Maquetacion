@@ -27,3 +27,6 @@ En los siguientes enlaces podrás visualizar las webs desarrolladas como parte d
 - Reto 2: Fracciones: https://tinatabo.github.io/Modulo2_Maquetacion/grid/fracciones/fracciones.html
 - Reto 3: Líneas Nombradas: https://tinatabo.github.io/Modulo2_Maquetacion/grid/lineas_nombradas/lineas_nombradas.html
 - Reto 4: Grid Áreas: https://tinatabo.github.io/Modulo2_Maquetacion/grid/grid_areas/grid_areas.html
+
+## Tema 6 - Bootstrap y JQuery -- rama dia7
+- Reto 1: Maquetación Bootstrap: https://tinatabo.github.io/Modulo2_Maquetacion/

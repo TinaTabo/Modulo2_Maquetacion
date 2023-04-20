@@ -1,0 +1,12 @@
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Scroll suavizado*/
+html{
+    scroll-behavior: smooth;
+}

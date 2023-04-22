@@ -84,6 +84,9 @@ html{
                 flex-wrap: wrap;
                 gap: 20px;
             }
+            .profesionales{
+                gap: 60px;
+            }
                 .card{
                     display: flex;
                     flex-direction: column;

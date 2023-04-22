@@ -63,70 +63,75 @@ html{
         background-color: #e31837;
     }
 
-    .seccion-peliculas{
+    .secciones{
         background-image: url(./img/fondo-imdb.jpg);
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-        padding: 20px;
     }
-        .peliculas{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+        .seccion-peliculas,.seccion-profesionales{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            gap: 50px;
             padding: 20px;
+            padding-top: 40px;
         }
-            .card{
+            .peliculas,.profesionales{
+                width: 100%;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: space-around;
                 align-items: center;
-                border: 5px double #f5c518;
-                background-color: #232323;
+                flex-wrap: wrap;
+                gap: 20px;
             }
-                .card-img-top{
-                    width: 190px;
-                    height: 300px;
-                    margin-top: 5px;
-                }
-                .card-body{
+                .card{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    text-align: center;
+                    border: 5px double #f5c518;
+                    background-color: #232323;
                 }
-        .añadir_pelicula{
-            background-color: #f5c518;
-            border-radius: 10px;
-            text-align: center;
-            padding: 10px;
-            width: 700px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-            .inputs{
+                    .card-title{
+                        font-size: 15px;
+                    }
+                    .card-img-top{
+                        width: 190px;
+                        height: 300px;
+                        margin-top: 5px;
+                    }
+                    .card-body{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+            .añadir_pelicula{
+                background-color: #f5c518;
+                border-radius: 10px;
+                text-align: center;
+                padding: 10px;
+                width: 700px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
                 gap: 10px;
             }
-                .input{
-                    width: 500px;
+                .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 10px;
                 }
-                input[type=text]{
-                    padding: 8px;
-                    border: 2px inset #232323;
-                    outline: none;
-                }
+                    .input{
+                        width: 500px;
+                    }
+                    input[type=text]{
+                        padding: 8px;
+                        border: 2px inset #232323;
+                        outline: none;
+                    }
 
     .footer{
         background-color: #232323;
@@ -155,7 +160,7 @@ html{
         font-size: 15px;
         padding: 10px;
     }
-    .peliculas{
+    .peliculas,.profesionales{
         flex-direction: column;
     }
 }
@@ -187,4 +192,13 @@ html{
         .firma{
             display: none;
         }
+}
+
+@media screen and (max-width: 500px) {
+    .añadir_pelicula{
+        width: 350px;
+    }
+            .input{
+                width: 250px;
+            }
 }

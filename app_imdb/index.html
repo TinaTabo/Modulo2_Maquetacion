@@ -14,7 +14,7 @@
     <!-- mi css -->
     <link rel="stylesheet" href="./style.css">
 </head>
-<body onload="cargarPeliculas()">
+<body onload="cargarDatos()">
     <!-- navbar -->
     <nav class="navegacion">
         <div class="navegacion__left">
@@ -22,7 +22,7 @@
             <ul class="enlaces">
                 <li><a class="text-light fw-bold" href="#" onclick="ocultarTodo()">Home</a></li>
                 <li><a class="text-light fw-bold" href="#" onclick="mostrarPeliculas()">Películas</a></li>
-                <li><a class="text-light fw-bold" href="#" id="nav_profesionales">Profesionales</a></li>
+                <li><a class="text-light fw-bold" href="#" onclick="mostrarProfesionales()">Profesionales</a></li>
             </ul>
         </div>
         <div class="navegacion__right text-light fw-bold">
@@ -37,39 +37,46 @@
 
     <!-- seccion de peliculas -->
     <div class="separador"></div>
-    <div class="seccion-peliculas" id="seccion-peliculas">
-        <div class="peliculas" id="peliculas"></div>
+    <div class="secciones">
+        <div class="seccion-peliculas" id="seccion-peliculas">
+            <h2 class="seccion__title text-light fw-bold">PELÍCULAS</h3>
+            <div class="peliculas" id="peliculas"></div>
 
-        <!-- seccion formulario -->
-        <div class="formulario">
-            <form action="" class="añadir_pelicula">
-                <h2 class="rotulo">
-                    ¡Añade una nueva película!
-                </h2>
-                <div class="inputs">
-                    <input type="text" id="input__titulo" placeholder="Título" class="input">
-                    <input type="text" id="input__año" placeholder="Año de estreno" class="input">
-                    <input type="text" id="input__reparto" placeholder="Reparto (separados por comas)" class="input">
-                    <input type="text" id="input__nacionalidad" placeholder="Nacionalidad" class="input">
-                    <input type="text" id="input__director" placeholder="Director" class="input">
-                    <input type="text" id="input__escritor" placeholder="Escritor" class="input">
-                    <input type="text" id="input__idioma" placeholder="Idioma" class="input">
-                    <input type="text" id="input__MCU" placeholder="¿Pertenece al MCU?(true o false)" class="input">
-                    <input type="text" id="input__nombreProtagonista" placeholder="Nombre del/la protagonista" class="input">
-                    <input type="text" id="input__productor" placeholder="Productor" class="input">
-                    <input type="text" id="input__distribuidor" placeholder="Destribuidor" class="input">
-                    <input type="text" id="input__genero" placeholder="Género" class="input">
-                    <input type="text" id="input__foto" placeholder="Imagen de la película (url)" class="input">
-                </div>
-                <div class="formulario__botones">
-                    <button type="reset" id="botones__boton" class="btn-añadir btn btn-danger" onclick="añadirPelicula( )">Añadir</button>
-                </div>
-            </form>
+            <!-- seccion formulario -->
+            <div class="formulario">
+                <form action="" class="añadir_pelicula">
+                    <h2 class="rotulo">
+                        ¡Añade una nueva película!
+                    </h2>
+                    <div class="inputs">
+                        <input type="text" id="input__titulo" placeholder="Título" class="input">
+                        <input type="text" id="input__año" placeholder="Año de estreno" class="input">
+                        <input type="text" id="input__reparto" placeholder="Reparto (separados por comas)" class="input">
+                        <input type="text" id="input__nacionalidad" placeholder="Nacionalidad" class="input">
+                        <input type="text" id="input__director" placeholder="Director" class="input">
+                        <input type="text" id="input__escritor" placeholder="Escritor" class="input">
+                        <input type="text" id="input__idioma" placeholder="Idioma" class="input">
+                        <input type="text" id="input__MCU" placeholder="¿Pertenece al MCU?(true o false)" class="input">
+                        <input type="text" id="input__nombreProtagonista" placeholder="Nombre del/la protagonista" class="input">
+                        <input type="text" id="input__productor" placeholder="Productor" class="input">
+                        <input type="text" id="input__distribuidor" placeholder="Destribuidor" class="input">
+                        <input type="text" id="input__genero" placeholder="Género" class="input">
+                        <input type="text" id="input__foto" placeholder="Imagen de la película (url)" class="input">
+                    </div>
+                    <div class="formulario__botones">
+                        <button type="reset" id="botones__boton" class="btn-añadir btn btn-danger" onclick="añadirPelicula()">Añadir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- seccion de profesionales -->
+        <div class="seccion-profesionales" id="seccion-profesionales">
+            <h2 class="seccion__title text-light fw-bold">PROFESIONALES</h3>
+            <div class="profesionales" id="profesionales"></div>
         </div>
     </div>
     <div class="separador"></div>
-
-    <!-- seccion de profesionales -->
 
     <!-- footer -->
     <footer class="footer">

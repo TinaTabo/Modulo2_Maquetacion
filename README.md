@@ -33,4 +33,4 @@ En los siguientes enlaces podrás visualizar las webs desarrolladas como parte d
 - Reto 2: Tienda de Ropa: https://tinatabo.github.io/Modulo2_Maquetacion/bootstrap_jquery/tienda_ropa/tienda_ropa.html
 
 ## Proyecto Final - App IMDB -- rama dia8
-https://tinatabo.github.io/Modulo2_Maquetacion/app-imdb
+https://tinatabo.github.io/Modulo2_Maquetacion/app_imdb

@@ -1,0 +1,207 @@
+/* Limpiadores: resetean los valores predefinidos de la página*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Scroll suavizado*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*-----Diseño del Body-----*/
+    .navegacion{
+        background-color: #232323;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px 15px 3px 15px;
+    }
+        .navegacion__left{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+            .logo{
+                width: 80px;
+                height: 35px;
+                border-radius: 5px;
+            }
+            .enlaces{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                padding-top: 15px;
+            }
+            a:link {
+                text-decoration: none;
+            }
+            a:visited {
+                text-decoration: none;
+            }
+        .navegacion__right{
+            text-align: center;
+        }
+
+
+    .home{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+        .home__img{
+            width: 100%;
+        }
+
+    .separador{
+        height: 5px;
+        background-color: #e31837;
+    }
+
+    .secciones{
+        background-image: url(./img/fondo-imdb.jpg);
+    }
+        .seccion-peliculas,.seccion-profesionales{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 20px;
+            padding-top: 40px;
+        }
+            .peliculas,.profesionales{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .profesionales{
+                gap: 60px;
+            }
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 5px double #f5c518;
+                    background-color: #232323;
+                }
+                    .card-title{
+                        font-size: 15px;
+                    }
+                    .card-img-top{
+                        width: 190px;
+                        height: 300px;
+                        margin-top: 5px;
+                    }
+                    .card-body{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+            .añadir_pelicula{
+                background-color: #f5c518;
+                border-radius: 10px;
+                text-align: center;
+                padding: 10px;
+                width: 700px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+                .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 10px;
+                }
+                    .input{
+                        width: 500px;
+                    }
+                    input[type=text]{
+                        padding: 8px;
+                        border: 2px inset #232323;
+                        outline: none;
+                    }
+
+    .footer{
+        background-color: #232323;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px;
+    }
+        .footer__logo{
+            margin-left: 20px;
+        }
+        .rrss{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .firma{
+            margin-right: 20px;
+        }
+
+
+/*----------Media-Queries---------*/
+@media screen and (max-width: 820px) {
+    .navegacion__right{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .peliculas,.profesionales{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navegacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .añadir_pelicula{
+        width: 500px;
+    }
+            .input{
+                width: 350px;
+            }
+}
+
+@media screen and (max-width: 540px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 15px;
+    }
+        .footer__logo{
+            display: none;
+        }
+        .firma{
+            display: none;
+        }
+}
+
+@media screen and (max-width: 500px) {
+    .añadir_pelicula{
+        width: 350px;
+    }
+            .input{
+                width: 250px;
+            }
+}
